@@ -1,0 +1,118 @@
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0.3rem;
+}
+
+#co {
+  margin-bottom: 3rem;
+}
+
+.search-prompt {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(57, 138, 244);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+#magnify {
+  width: 8%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgb(210, 219, 247);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#contents {
+  display: flex;
+  justify-content: center;
+  margin-right: 2.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headbutton {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  padding: 1rem 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  color: rgb(110, 112, 114);
+  border: none; /* Remove the border */
+  cursor: pointer;
+  background-color: whitesmoke;
+  text-decoration: none;
+}
+
+.headbutton:hover {
+  color: rgb(8, 8, 8);
+  border: none; /* Remove the border */
+  cursor: pointer;
+}
+
+#banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 209, 141);
+  padding: 4rem;
+  border-radius: 10px;
+  color: rgb(57, 138, 244);
+  font-size: 2.5rem;
+  margin: 3rem;
+  margin-top: 1rem;
+}
+#top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.top {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  color: rgb(110, 112, 114);
+  border: none; /* Remove the border */
+  cursor: pointer;
+  background-color: whitesmoke;
+  text-decoration: none;
+}
+
+.top:hover {
+  color: rgb(8, 8, 8);
+  border: none; /* Remove the border */
+  cursor: pointer;
+}
+
+.p-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.p {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 85%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}

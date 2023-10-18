@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./script.js" type="module"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>NYC Addiction Services</title>
+  </head>
+  <body>
+    <div id="heading">
+      <div id="contents">
+        <a href="../Helplinks/guide.html" class="headbutton"
+          >A GUIDE TO THE TREATMENT PROCESS</a
+        >
+        <a href="../Helplinks/detoxq.html" class="headbutton">
+          HOW TO ANSWER DETOX INTAKE QUESTIONS TO GET ADMITTED
+        </a>
+        <a href="../Helplinks/saved.html" class="headbutton"
+          >MY SAVED CENTERS</a
+        >
+        <button class="headbutton">HOME</button>
+      </div>
+      <div id="banner-container">
+        <h1 id="banner">Medicaid: NYC Addiction Services</h1>
+        <img
+          src="../../assets/magnify.png"
+          alt="An example image"
+          id="magnify"
+        />
+      </div>
+    </div>
+    <h2 id="search-prompt">Select what you're looking for:</h2>
+
+    <div id="top-row">
+      <button class="top data-detox">DETOX?</button>
+      <button id="rehab" class="top data-rehab">REHAB?</button>
+      <!-- <button class="top">BOTH?</button> -->
+    </div>
+
+    <div class="co">
+      <div id="second-row">
+        <div class="co">
+          <h2 class="search-prompt">Would you like to recieve treatment in an: </h2>
+          <div class="center">
+          <button id="womens" class="top">All Women's Unit</button>
+          <button id= "mens" class="top">All Men's Unit</button>
+          <button id="neutral" class="top">Doesn't Matter</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="co">
+      <div id="third-row">
+        <div class="co">
+          <h2 class="search-prompt">Do you also want to be treated for any co-occurant conditions </h2>
+          <h2 class="search-prompt">while in rehab, such as bipolar disorder, depression, and/or PTSD? </h2> 
+          <div class="center">
+          <button id="yes" class="top">Yes</button>
+          <button id="no" class="top">No</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultDiv"></div>
+
+    <div id="responsesContainer"></div>
+
+    <footer>Although no one can go back and make a brand new start, <br> anyone can start from
+      now and make a brand new ending</footer>
+  </body>
+</html>
+
