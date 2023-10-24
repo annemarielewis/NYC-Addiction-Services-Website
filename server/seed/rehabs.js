@@ -123,7 +123,9 @@ const main = async () => {
 
     //   movie: RememberMe[0]._id,
   ];
-  await Rehab.insertMany(rehabs);
+  await Rehab.deleteMany();
+  let createRehab= await Rehab.insertMany(rehabs);
+  console.log(createRehab)
   console.log("Created rehabs!");
 };
 

@@ -9,25 +9,29 @@
 //pulling in our db and models
 const db = require("../db");
 //searching for relevant variables within the models folder:
-const { County } = require("../models"); 
+const { County } = require("../models");
 // const { Detox } = require("../models");
 // const { Rehab } = require("../models");
 
 //connecting to the db / giving us an error if anything goes wrong
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-//because we are taking a quick detour out of JS and into Mongo, we need to make sure these are all async functions. 
+//because we are taking a quick detour out of JS and into Mongo, we need to make sure these are all async functions.
 //That way, even if it only takes .01 seconds, code-lines won't get thrown out of order
 const main = async () => {
   const counties = [
-    {name: "Bronx County", rankinwealth: 5},
-    {name: "New York County", rankinwealth: 2},
-    {name: "Richmond County", rankinwealth: 1},
-    {name: "Kings County", rankinwealth: 4},
-    {name: "Queens County", rankinwealth: 3},
-    {name: "Sullivan County"}
+    { name: "Bronx County", rankinwealth: 5 },
+    { name: "New York County", rankinwealth: 2 },
+    { name: "Richmond County", rankinwealth: 1 },
+    { name: "Kings County", rankinwealth: 4 },
+    { name: "Queens County", rankinwealth: 3 },
+    { name: "Sullivan County" },
+    { name: "Albany County" },
+    { name: "Erie County" },
   ];
-  await County.insertMany(counties);
+  await County.deleteMany();
+  let createCounty = await County.insertMany(counties);
+  console.log(createCounty);
   console.log("Created counties!");
 };
 

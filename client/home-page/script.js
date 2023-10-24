@@ -222,6 +222,17 @@ function html(apiResponse) {
     const responseDiv = document.createElement("div");
     responseDiv.classList.add("response");
 
+    const button = document.createElement("button");
+    button.textContent = "Save Rehab"; // Set the button text
+    button.id = response._id; // Set the button's id.
+    button.classList.add("saveButton"); //set buttons class (to style it)
+    // Append the button to the 'responseDiv'.
+    responseDiv.appendChild(button);
+
+    //in cart cirlce
+    const circle = document.createElement("div");
+    circle.classList.add("orangeDot");
+    responseDiv.appendChild(circle);
     // Create inner divs for each property and set their classes and text content.
     const nameDiv = document.createElement("div");
     nameDiv.classList.add("name");
@@ -240,9 +251,16 @@ function html(apiResponse) {
     countyDiv.classList.add("county");
     countyDiv.textContent = "County: " + response.county;
 
-    const urlDiv = document.createElement("div");
-    urlDiv.classList.add("url");
-    urlDiv.textContent = "URL: " + response.url;
+    // Create an 'a' tag for the URL and set its attributes
+    const urlAnchor = document.createElement("a");
+    urlAnchor.classList.add("url");
+    urlAnchor.textContent = "Link to Website";
+    urlAnchor.href = response.url;
+    urlAnchor.target = "_blank"; // Opens the URL in a new tab
+
+    // const urlDiv = document.createElement("div");
+    // urlDiv.classList.add("url");
+    // urlDiv.textContent = "URL: " + response.url;
 
     const descriptionDiv = document.createElement("div");
     descriptionDiv.classList.add("description");
@@ -253,7 +271,8 @@ function html(apiResponse) {
     responseDiv.appendChild(numberDiv);
     responseDiv.appendChild(addressDiv);
     responseDiv.appendChild(countyDiv);
-    responseDiv.appendChild(urlDiv);
+    //responseDiv.appendChild(urlDiv);
+    responseDiv.appendChild(urlAnchor);
     responseDiv.appendChild(descriptionDiv);
 
     const responsesContainer = document.querySelector("#responsesContainer");
@@ -277,6 +296,25 @@ function scrollToDistance17() {
     17 * parseFloat(getComputedStyle(document.documentElement).fontSize);
   window.scrollBy(0, distanceToScroll);
 }
+
+//let cart = []
+//event listener for when "save" button is clicked:
+
+document.body.addEventListener("click", (event) => {
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  // If there's no cart in local storage, initialize it as an empty array
+  if (!cart) {
+    cart = [];
+  }
+  if (event.target && event.target.classList.contains("saveButton")) {
+    const productId = event.target.getAttribute("id");
+    cart.push(productId);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    console.log("Cart:", cart);
+    //orangeDot = document.querySelectorAll(".orangeDot");
+    //orangeDot.style.visibility = "visible";
+  }
+});
 
 // //adding event listener to allwomen a-tag
 // allWomen.addEventListener("click", async () => {

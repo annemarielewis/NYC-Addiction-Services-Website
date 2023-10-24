@@ -71,7 +71,9 @@ const main = async () => {
       url: "https://www.detoxlocal.com/listing/interfaith-medical-center-brooklyn-ny-4/",
     },
   ];
-  await Detox.insertMany(detoxes);
+  await Detox.deleteMany();
+  let createDetox= await Detox.insertMany(detoxes);
+  console.log(createDetox)
   console.log("Created detox centers!");
 };
 

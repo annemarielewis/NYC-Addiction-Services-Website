@@ -3,15 +3,6 @@ h1 {
   margin-top: 0.3rem;
 }
 
-#search-prompt {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(57, 138, 244);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 #magnify {
   width: 8%;
   height: auto; /* Maintain aspect ratio */
@@ -68,132 +59,87 @@ body {
   margin-top: 1rem;
 }
 
-#top-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-#second-row {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-#third-row {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
 .center {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
 }
 
-.top {
-  font-size: 2rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.4rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  border-radius: 10px;
-  color: rgb(110, 112, 114);
-  border: none; /* Remove the border */
-  cursor: pointer;
-  background-color: whitesmoke;
-  text-decoration: none;
-}
-
-.top:hover {
-  color: rgb(8, 8, 8);
-  border: none; /* Remove the border */
-  cursor: pointer;
-}
-
-#responsesContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
-  gap: 0rem; /* Adjust the gap between items */
-}
-
-.response {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  margin: 3rem;
-  background-color: rgb(57, 138, 244);
-  color: rgb(245, 209, 141);
-  font-size: medium;
-  font-weight: bold;
-}
-
-.name {
+#name {
   margin: 0.5rem;
   padding: 0.2rem;
   font-size: large;
   font-family: "Montserrat", sans-serif;
 }
 
-.number {
+#number {
   margin: 0.5rem;
   padding: 0.2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.address {
+#address {
   margin: 0.5rem;
   padding: 0.2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.county {
+#county {
   margin: 0.5rem;
   padding: 0.2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.description {
-  margin: 0.5rem;
+#description {
+  margin: 0rem;
   padding: 0.2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.url {
-  margin: 0.5rem;
+#url {
+  margin: 0rem;
   padding: 0.2rem;
   font-family: "Montserrat", sans-serif;
-  color: rgb(245, 209, 141)
+  color: rgb(245, 209, 141);
 }
 
-#co {
-  margin-bottom: 3rem;
-}
-
-.search-prompt {
+#id {
+  margin: 0rem;
+  padding: 0.2rem;
   font-family: "Montserrat", sans-serif;
-  color: rgb(57, 138, 244);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 0;
+}
+
+#cocondition {
   margin-bottom: 0rem;
 }
 
-#resultDiv {
+#rehabForm {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
   font-family: "Montserrat", sans-serif;
-  color: rgb(57, 138, 244);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-top: 4rem;
+  color: rgb(249, 196, 99);
+  font-size: 1rem;
+  margin-top: 0rem;
   margin-bottom: 4rem;
+  background-color: rgb(57, 138, 244);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-right: 1rem;
 }
+
+#rehabDeleteForm {display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(249, 196, 99);
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
+  background-color: rgb(57, 138, 244);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-left: 1rem;}
 
 footer {
   display: flex;
@@ -216,7 +162,7 @@ footer {
   display: flex;
   justify-self: center;
   align-self: center;
-  padding: .5rem;
+  padding: 0.5rem;
   color: rgb(57, 138, 244);
   background-color: rgb(245, 209, 141);
   border: none;
@@ -239,4 +185,10 @@ footer {
   border-radius: 50%;
   visibility: hidden;
   margin-bottom: 1rem;
+}
+
+#flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

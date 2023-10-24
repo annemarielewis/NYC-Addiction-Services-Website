@@ -100,20 +100,24 @@ h1 {
     cursor: pointer;
   }
   
+
   .p-container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 4rem;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.p {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 85%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+
   
-  .p {
-    background-color: white;
-    border-radius: 20px;
-    padding: 2rem;
-    max-width: 85%;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    color: grey;
-  }
   

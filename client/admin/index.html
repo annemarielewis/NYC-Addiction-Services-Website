@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./script.js" type="module"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>NYC Addiction Services</title>
+  </head>
+  <body>
+    <div id="heading">
+      <div id="contents">
+        <a href="../admin/index.html" class="headbutton"
+        >ADMIN PAGE</a>
+        <a href="../Helplinks/guide.html" class="headbutton"
+          >A GUIDE TO THE TREATMENT PROCESS</a
+        >
+        <a href="../Helplinks/detoxq.html" class="headbutton">
+          HOW TO ANSWER DETOX INTAKE QUESTIONS TO GET ADMITTED
+        </a>
+        <a href="../cart/index.html" class="headbutton"
+          >MY SAVED CENTERS</a>
+        <button class="headbutton">HOME</button>
+      </div>
+      <div id="banner-container">
+        <h1 id="banner">For Admins</h1>
+        <img
+          src="../../assets/magnify.png"
+          alt="An example image"
+          id="magnify"
+        />
+      </div>
+    </div>
+   
+    <div id="flex">
+    <div id="rehabUpdateForm"><h1>Update Rehab</h1>
+      <form id="updateRehabForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+  
+          <label for="number">Number:</label>
+          <input type="text" id="number" name="number" required><br>
+  
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea><br>
+  
+          <label for="coconditions">Coconditions:</label>
+          <input type="checkbox" id="coconditions" name="coconditions"><br>
+  
+          <label for="detox">Detox:</label>
+          <input type="checkbox" id="detox" name="detox"><br>
+  
+          <label for="sexseparated">Sex Separated:</label>
+          <input type="checkbox" id="sexseparated" name="sexseparated"><br>
+  
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required><br>
+  
+          <label for="county">County:</label>
+          <input type="text" id="county" name="county" required><br>
+  
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url" required><br>
+         
+          <label for="id">ID from database:</label>
+          <input type="text" id="id" name="id" required>
+          <br>
+  
+          <input type="submit" value="Update Rehab">
+      </form>
+  </div>
+        <form id="rehabForm">
+          <h2 class="search-prompt">Add a Rehab:</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="number">Number:</label>
+            <input type="text" id="number" name="number" required>
+            <br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <br>
+            <div>
+            <label id="cocondition" for="coconditions">Has Co-Conditions:</label>
+            <input type="checkbox" id="coconditions" name="coconditions">
+            </div>
+            <br>
+            <div>
+            <label for="detox">Requires Detox:</label>
+            <input type="checkbox" id="detox" name="detox">
+          </div>
+            <br>
+          <div>
+            <label for="sexseparated">Sex Separated:</label>
+            <input type="checkbox" id="sexseparated" name="sexseparated">
+          </div>
+            <br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <br>
+            <label for="county">County ID (from county database):</label>
+            <input type="text" id="county" name="county" required>
+            <br>
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" required>
+            <br>
+            <button type="submit">Create Rehab</button>
+          </form>
+    
+        <!-- end of add idv -->
+
+      <form id="rehabDeleteForm">
+        <h2 class="search-prompt">Delete a Rehab:</h2>
+        <label class= "for="name">Rehab ID (from database):</label>
+        <input type="text" id="id" name="id" required>
+        <br>
+        <button type="submit">Delete Rehab</button>
+      </form>
+    </div>
+
+  </div>
+    <!-- flex div end -->
+  </div>
+    
+
+    <footer>Although no one can go back and make a brand new start, <br> anyone can start from
+      now and make a brand new ending</footer>
+  </body>
+</html>
+
